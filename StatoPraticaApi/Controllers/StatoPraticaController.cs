@@ -99,6 +99,13 @@ namespace StatoPraticaApi.Controllers
                     return BadRequest("Inserire un Risultato Pratica corretto: 1 = Approvata, 2 = Rifiutata");
                 }
 
+                if (statoPraticaDto.IdStatoPratica < (int)StatoPratica.PraticaCompletata
+                    && (statoPraticaDto.IdRisultatoPratica != null || statoPraticaDto.IdRisultatoPratica > 0))
+                {
+                    _logger.LogWarning("BadRequest - Inserire un Risultato Pratica esclusivamente se la Pratica è in Stato Completata");
+                    return BadRequest("BadRequest - Inserire un Risultato Pratica esclusivamente se la Pratica è in Stato Completata");
+                }
+
                 if (pratica.IdStatoPratica == (int)StatoPratica.PraticaCompletata)
                 {
                     _logger.LogWarning("BadRequest - La Stato Pratica non può essere aggiornata in quanto è in Stato Completata");

@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using Swashbuckle.AspNetCore.Annotations;
 using Microsoft.AspNetCore.Http;
+using System.Text.Json.Serialization;
 
 namespace Application.DTOs.Pratica
 {
@@ -32,6 +33,7 @@ namespace Application.DTOs.Pratica
         [SwaggerSchema(ReadOnly = true)]
         public DateTime? LastUpdate { get; set; }
 
+        [JsonIgnore]
         [SwaggerSchema(ReadOnly = true)]
         public ICollection<StoricoPraticaDto>? StoricoPratiche { get; } = new List<StoricoPraticaDto>();
     }
