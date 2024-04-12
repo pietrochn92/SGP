@@ -17,9 +17,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PraticaApi", "..\PraticaApi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthApi", "..\AuthApi\AuthApi.csproj", "{0F78CEEE-EE6E-4772-AD61-6C4C3C7295D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatoPraticaApi", "StatoPraticaApi\StatoPraticaApi.csproj", "{6FDA555F-DB9D-471C-9BB3-90C79BB6232A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatoPraticaApi", "..\StatoPraticaApi\StatoPraticaApi.csproj", "{6FDA555F-DB9D-471C-9BB3-90C79BB6232A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AggiornamentoStatoApi", "AggiornamentoStatoApi\AggiornamentoStatoApi.csproj", "{37350928-E753-484D-8811-57FD320DADD1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AggiornamentoStatoApi", "..\AggiornamentoStatoApi\AggiornamentoStatoApi.csproj", "{37350928-E753-484D-8811-57FD320DADD1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
